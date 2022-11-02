@@ -1,0 +1,14 @@
+# 프로젝트 패키지 설정
+npm init -y
+
+# edge 모듈 설치
+npm install edge-js
+
+# socket 모듈 설치
+npm install socket.io
+
+# express 모듈 설치
+npm install express
+
+# Application 실행
+node app.js
