@@ -25,16 +25,16 @@
                 <button class="btn btn-primary btn-lg btn-block" onclick="createOrOpenSHM();">생성하기</button>
                 <br><br>
                 <label>첫번째 값</label>
-                <input type="text" class="form-control" readonly>
+                <input type="text" id="value1" class="form-control" readonly>
                 <label>두번째 값</label>
-                <input type="text" class="form-control" readonly>
+                <input type="text" id="value2" class="form-control" readonly>
                 <label>세번째 값</label>
-                <input type="text" class="form-control" readonly>
+                <input type="text" id="value3" class="form-control" readonly>
                 <label>네번째 값</label>
-                <input type="text" class="form-control" readonly>
+                <input type="text" id="value4" class="form-control" readonly>
                 <label>다섯번째 값</label>
-                <input type="text" class="form-control" readonly>
-                <button class="btn btn-primary btn-lg btn-block" onclick="GetMemoryMapDataValue();">데이터 가져오기</button>
+                <input type="text" id="value5" class="form-control" readonly>
+                <button class="btn btn-primary btn-lg btn-block" onclick="getMemoryMapDataValues();">데이터 가져오기</button>
             </div>
         </div>
     </div>
@@ -47,6 +47,23 @@
     function createOrOpenSHM() {
         socket.emit('createOrOpenSHM', $('#memoryMapName').val());
     }
+
+    function getMemoryMapDataValues() {
+        socket.emit('getMemoryMapDataValues', $('#memoryMapName').val());
+    }
+
+    socket.on('showPopup', function(data) {
+        alert(data);
+    });
+
+    socket.on('getMemoryMapDataValues', function(data) {
+        var v = JSON.parse(data);
+        $('#value1').val(v.value1);
+        $('#value2').val(v.value2);
+        $('#value3').val(v.value3);
+        $('#value4').val(v.value4);
+        $('#value5').val(v.value5);
+    });
 </script>
 
 </html>
