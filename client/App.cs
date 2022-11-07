@@ -59,10 +59,10 @@ namespace SHM
         /// 메모리 맵의 데이터 값을 변경한다.
         /// </summary>
         /// <param name="param1">메모리 맵의 첫번째 값</param>
-        /// <param name="param2">메모리 맵의 첫번째 값</param>
-        /// <param name="param3">메모리 맵의 첫번째 값</param>
-        /// <param name="param4">메모리 맵의 첫번째 값</param>
-        /// <param name="param5">메모리 맵의 첫번째 값</param>
+        /// <param name="param2">메모리 맵의 두번째 값</param>
+        /// <param name="param3">메모리 맵의 세번째 값</param>
+        /// <param name="param4">메모리 맵의 네번째 값</param>
+        /// <param name="param5">메모리 맵의 다섯번째 값</param>
         /// <returns>메모리 맵 데이터 값 변경 성공 여부</returns>
         public static bool SetSHMDataValue(int param1, int param2, int param3, int param4, int param5)
         {
