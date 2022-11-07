@@ -37,7 +37,7 @@ namespace SHM
                 this.value4.Text = memoryMapDatas[3].ToString();
                 this.value5.Text = memoryMapDatas[4].ToString();
 
-                Debug.WriteLine("[" + this.memoryMapName.Text + "]의 데이터: " + string.Join(", ", memoryMapDatas), "Access Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Debug.WriteLine("[" + this.memoryMapName.Text + "]의 데이터: " + string.Join(", ", memoryMapDatas));
             } 
             else
             {
