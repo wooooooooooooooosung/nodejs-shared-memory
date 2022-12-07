@@ -1,7 +1,7 @@
 <h1>node.js 공유 메모리 사용</h1>
 
 
-<h2>🛠 Flow</h2>
+<h2>🎨 Flow</h2>
 <img src="./Flow.png"/>
 
 <h2>🛠 Tools</h2>
