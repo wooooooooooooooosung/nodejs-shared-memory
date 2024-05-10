@@ -1,5 +1,5 @@
 <h1>nodejs SHM(Shared Memory) 활용</h1>
-<img src="./Flow.png"/>
+<img src="./flow.png"/>
 
 <h2>내용</h2>
 <div>
